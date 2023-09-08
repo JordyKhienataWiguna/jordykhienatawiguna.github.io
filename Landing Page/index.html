@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veloche</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Owl Carousel min. css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- 2. Owl Carousel Theme Min. css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Image Source
+     <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Slash98XT_21_33019_A_Primary?$responsive-pjpg$&amp;cache=on,on&amp;wid=640&amp;hei=480" alt="" />
+     <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Slash7NX_21_32992_A_Primary?$responsive-pjpg$&amp;cache=on,on&amp;wid=640&amp;hei=480" alt="" />
+     <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Marlin6Womens_20_28788_A_Primary?$responsive-pjpg$&amp;cache=on,on&amp;wid=640&amp;hei=480" alt="" />
+     <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/TopFuel7SX_21_32984_B_Primary?$responsive-pjpg$&amp;cache=on,on&amp;wid=640&amp;hei=480" alt="" />
+     <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/XCaliber9_20_29760_B_Primary?$responsive-pjpg$&amp;cache=on,on&amp;wid=640&amp;hei=480" alt="" />
+     <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/1008601_2017_A_1_820_Womens?$responsive-pjpg$&amp;cache=on,on&amp;wid=640&amp;hei=480" alt="" /> -->
+  </head>
+  <body>
+    <!-- Navbar Section -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: transparent">
+      <div class="container">
+        <a class="navbar-brand" href="../Landing Page/index.html">Veloche</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> CATEGORY </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../mountain/mountain.html">MOUNTAIN</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../road/road.html">ROAD</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../kids/kid.html">KIDS</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../electric/hybrid.html">HYBRID</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../hybrid/electric.html">ELECTRIC</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="../new event/event.html">EVENT</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="../shop/shop.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SHOP</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="../shop/shop.html">JERSEY</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../shop/shop.html">SHOES</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../shop/shop.html">TOOLS</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../shop/shop.html">PUMP</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../shop/shop.html">MAINTENANCE </a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="../shop/shop.html">WHEELS</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="../about us new/aboutus.html">ABOUT US</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="../contactus/contactus.html">CONTACT US</a>
+            </li>
+          </ul>
+
+
+          <!-- <div class="toggle-btn" id="btn">
+            <span class="word" id="btnText">Dark</span>
+            <img src="../Asset/images/moon.png" id="btnIcon" />
+          </div> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div class="hero-section">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="../Asset/hero-banner.mp4" type="video/mp4" />
+      </video>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <p>Join the movement towards a healthier, more active lifestyle with cycling</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p>Upgrade your ride and experience the thrill of a new bicycle</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <!-- <h5>Event</h5> -->
+              <p>Join the cycling community and experience the camaraderie and support of fellow riders</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Owl Carousel section -->
+    <div class="owl-carousel-section">
+      <div class="btn-category">
+        <h2>CATEGORY</h2>
+        <div class="btn-next ms-1">
+          <button class="btn">
+            <a href=""><i class="fa-solid fa-arrow-right fa-2xl" style="color: #000000"></i></a>
+          </button>
+        </div>
+      </div>
+      <div class="owl-section container-fluid my-5">
+        <div class="row">
+          <div class="col-12 m-auto">
+            <div class="owl-carousel owl-theme">
+              <div class="item mb-4">
+                <div class="card border-0 shadow-0">
+                  <img src="https://trek.scene7.com/is/image/TrekBicycleProducts/Slash98XT_21_33019_A_Primary?$responsive-pjpg$&amp;cache=on,on&amp;wid=640&amp;hei=480" alt="" />
+                  <div class="card-body">
+                    <div class="card-title text-center">
+                      <div class="linking"><a href="../mountain/mountain.html"><h4>Mountain Bikes</h4></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="card border-0 shadow-0">
+                  <img src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/DomaneSLR9eTap_23_37358_C_Primary" alt="" />
+                  <div class="card-body">
+                    <div class="card-title text-center">
+                      <div class="linking"><a href="../road/road.html"><h4>Road Bikes</h4></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card border-0 shadow-0">
+                  <img src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/Wahoo26_23_37055_B_Primary" alt="" />
+                  <div class="card-body">
+                    <div class="card-title text-center">
+                      <div class="linking"><a href="../kids/kid.html"><h4>Kid Bikes</h4></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card border-0 shadow-0">
+                  <img src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/FetchPlus4US-24-37114-B-Primary" alt="" />
+                  <div class="card-body">
+                    <div class="card-title text-center">
+                      <div class="linking"><a href="../electric/hybrid.html"><h4>Hybrid Bikes</h4></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card border-0 shadow-0">
+                  <img src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/FuelEXe99XX1AXS_23_36373_A_Primary" alt="" />
+                  <div class="card-body">
+                    <div class="card-title text-center">
+                      <div class="linking"><a href="../hybrid/electric.html"><h4>Electric Bikes</h4></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EVENT -->
+
+    <div class="event-section d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="text-white fw-bold mb-4">EVENT</h1>
+            <p class="text-white mb-4 text-opacity-90">"Join the Ride, Feel the Thrill!"</p>
+            <a href="../new event/event.html"><button class="btn btn-light rounded-1 m-2">Join Now!</button></a>
+            <!-- <button class="btn btn-outline-light rounded-1">Join Membership</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shop section -->
+
+    <div class="btn-category">
+      <h2>SHOP</h2>
+      <div class="btn-next ms-1">
+        <button class="btn">
+          <a href="../shop/shop.html"><i class="fa-solid fa-arrow-right fa-2xl" style="color: #000000"></i></a>
+        </button>
+      </div>
+    </div>
+    <div class="shop-section">
+      <figure class="card-shop">
+        <img src="https://cdn.shopify.com/s/files/1/0551/7747/8280/products/SSJerseyBotGreenWomenFront_1600x1600_42a59956-c6ab-4ece-963f-63399e52c198_750x.webp.jpg?v=1659457616s" class="card-shop-img" />
+        <figcaption class="card-shop-body">
+          <h2 class="card-shop-title">Women's Jersey</h2>
+          <p class="card-shop-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, explicabo.</p>
+        </figcaption>
+      </figure>
+      <figure class="card-shop">
+        <img src="https://cdn.shopify.com/s/files/1/0551/7747/8280/products/MensSS21_0011_AlbionCyclingSS20-012-Edit2123_0002_Layer2_0003_Layer8_1600x1600_6376bf86-1c57-44cd-9079-229eecf5a969_750x.jpg?v=1635741060" class="card-shop-img" />
+        <figcaption class="card-shop-body">
+          <h2 class="card-shop-title">Men's Jersey</h2>
+          <p class="card-shop-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, explicabo.</p>
+        </figcaption>
+      </figure>
+      <figure class="card-shop">
+        <img src="https://cdn.shopify.com/s/files/1/0551/7747/8280/products/ultimate-white-8_750x.jpg?v=1652277412" class="card-shop-img" />
+        <figcaption class="card-shop-body">
+          <h2 class="card-shop-title">Shoes</h2>
+          <p class="card-shop-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, explicabo.</p>
+        </figcaption>
+      </figure>
+      <figure class="card-shop">
+        <img src="https://cdn.shopify.com/s/files/1/0551/7747/8280/products/hiro-side-lever-locking-presta-chuck-carbon-steel-236108-sw_1800x1800_41bf0235-9859-42d7-849c-be8ba689e029_750x.jpg?v=1637393647" class="card-shop-img" />
+        <figcaption class="card-shop-body">
+          <h2 class="card-shop-title">Tools</h2>
+          <p class="card-shop-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, explicabo.</p>
+        </figcaption>
+      </figure>
+      <figure class="card-shop">
+        <img src="https://cdn.shopify.com/s/files/1/0551/7747/8280/products/pista-floor-pump-327904-sw_1800x1800_efa4d488-5283-41a3-8173-32ac0596075a_750x.jpg?v=1636963391" class="card-shop-img" />
+        <figcaption class="card-shop-body">
+          <h2 class="card-shop-title">Pump</h2>
+          <p class="card-shop-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, explicabo.</p>
+        </figcaption>
+      </figure>
+      <figure class="card-shop">
+        <img src="https://cdn.shopify.com/s/files/1/0551/7747/8280/products/silca-secret-chain-blend-hot-melt-wax-215714-sw_1800x1800_09f8b132-af44-4364-a138-942dc5750c15_750x.jpg?v=1636969429" class="card-shop-img" />
+        <figcaption class="card-shop-body">
+          <h2 class="card-shop-title">Maintance</h2>
+          <p class="card-shop-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, explicabo.</p>
+        </figcaption>
+      </figure>
+      <figure class="card-shop">
+        <img src="https://cdn.shopify.com/s/files/1/0551/7747/8280/products/R4DiscWhite_750x.jpg?v=1643255810" class="card-shop-img" />
+        <figcaption class="card-shop-body">
+          <h2 class="card-shop-title">Wheel</h2>
+          <p class="card-shop-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, explicabo.</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div class="about-section">
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer"></div>
+    <footer class="bg-dark text-light pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #1c6758">About Us</h5>
+            <hr class="mb-4" />
+            <p>We are the home for bicycle enthusiasts who organize inspirational events and provide the best bicycle e-commerce. Enjoy an unforgettable trip and find quality products for your bicycle hobby.</p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #1c6758">Let Us Help</h5>
+            <hr class="mb-4" />
+            <p>
+              <a href="#" class="text-dark-style" style="text-decoration: none">Your Account</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark-style" style="text-decoration: none">Your Orders</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark-style" style="text-decoration: none">Manage Your Content and Devices</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark-style" style="text-decoration: none">Help</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #1c6758">Let Us Help</h5>
+            <hr class="mb-4" />
+            <p>
+              <a href="#" class="text-dark-style" style="text-decoration: none">Sell Products on Our Website</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark-style" style="text-decoration: none">Advertise Your Products</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark-style" style="text-decoration: none">Become an Affiliate</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark-style" style="text-decoration: none">Self Publish</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold" style="color: #1c6758">Contact</h5>
+            <hr class="mb-4" />
+            <p>
+              <li class="fas fa-home mr-3"></li>
+              Gunadarma
+            </p>
+            <p>
+              <li class="fas fa-envelope mr-3"></li>
+              veloche@gmail.com
+            </p>
+            <p>
+              <li class="fas fa-phone mr-3"></li>
+              +6288293404789
+            </p>
+            <p>
+              <li class="fas fa-print mr-3"></li>
+              +6288293404789
+            </p>
+          </div>
+
+          <hr class="mb-4" />
+          <div class="row d-flex justify-content-center">
+            <div>
+              <p>
+                Copyright 2023 All Rights Reserved By :
+                <a href="#" style="text-decoration: none">
+                  <strong class="" style="color: #1c6758">The Providers</strong>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="text-center">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-dark"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-dark"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-dark"><i class="fab fa-google-plus"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-dark"><i class="fab fa-linked-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <!-- let's include cdn files -->
+
+    <!-- 0. JQuery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- 1. Owl Carousel Min .js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Init Owl Carousel -->
+
+    <script>
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 15,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 5,
+          },
+        },
+      });
+    </script>
+
+    <!--  -->
+
+    <!-- <script>
+      let btn = document.getElementById('btn');
+      let btnText = document.getElementById('btnText');
+      let btnIcon = document.getElementById('btnIcon');
+
+      btn.onclick = function () {
+        document.body.classList.toggle('.dark-theme');
+
+        if (document.body.classList.toggle('.dark-theme')) {
+          btnIcon.src = '../Asset/images/sun.png';
+          btnText.innerHTML = 'Light';
+        } else {
+          btnIcon.src = '/Asset/images/moon.png';
+          btnText.innerHTML = 'Dark';
+        }
+      };
+    </script> -->
+  </body>
+</html>

@@ -1,0 +1,408 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #fff #;
+  --title-color: #1c6758;
+}
+
+.dark-theme {
+  --main-color: #000;
+}
+
+body {
+  /* transition: background 0.8s, color 0.8s; */
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+.nav-link {
+  font-size: 16px;
+}
+
+.nav-link:hover {
+}
+
+.nav-link.active {
+  font-weight: 500;
+}
+
+.button-primary {
+  width: 133px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 20px;
+}
+
+.button-primary:hover {
+  background-color: var(--title-color);
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+.dropdown-menu {
+  width: auto;
+  height: auto;
+}
+
+.dropdown-item {
+  margin: 10px 0 10px;
+}
+a .hero-section {
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 100%;
+  margin: auto;
+  font-size: 40px;
+  line-height: 1.8;
+}
+
+.carousel-caption a {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #1977cc;
+  padding: 5px 20px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.carousel-inner::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.linking a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-category {
+  /* background-color: red; */
+  display: flex;
+  position: relative;
+  margin: 20px auto 20px 5px;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.btn {
+  border: none;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: var(--title-color);
+  border-radius: 50px;
+  transition: 0.4s;
+}
+
+/* Event Section */
+
+.event-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../Asset/event.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+/* End of Event Section */
+
+.card-shop {
+  position: relative;
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.card-shop-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scale: 1.1;
+  transition: opacity 0.25s, scale 0.35s;
+}
+
+.card-shop:hover .card-shop-img {
+  opacity: 0.5;
+  scale: 1;
+}
+
+.card-shop-body {
+  position: absolute;
+  inset: 0;
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+  justify-content: center;
+}
+
+.card-shop-body::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 2px solid #fff;
+  opacity: 0;
+  scale: 1.25;
+  transition: opacity 0.25s, scale 0.25s;
+}
+
+.card-shop:hover .card-shop-body::before {
+  opacity: 1;
+  scale: 1;
+}
+
+.card-shop-title {
+  letter-spacing: 14px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-shop:hover .card-shop-desc {
+  opacity: 1;
+  translate: 0;
+}
+
+.card-shop-desc {
+  font-size: 14px;
+  opacity: 0;
+  translate: -25px;
+  transition: opacity 0.25s, translate 0.25;
+}
+
+.img-event {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .carousel-caption {
+    bottom: 165px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 16px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #1c6758;
+}
+
+.home::before {
+  z-index: 777;
+  content: '';
+  position: absolute;
+  background: rgba(28, 103, 88, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home .content {
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  margin-top: 50px;
+  display: none;
+}
+
+.home .content.active {
+  display: block;
+}
+
+.home .content h1 {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+
+.home .content h1 span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.home .content p {
+  margin-bottom: 65px;
+}
+
+.home .content a {
+  background: #fff;
+  padding: 15px 35px;
+  color: #1c6758;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+.home .media-icons {
+  z-index: 888;
+  position: absolute;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease;
+}
+
+.home .media-icons a {
+  color: #fff;
+  font-size: 1.6em;
+}
+
+.home .media-icons a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.home video {
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-navigation {
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(80px);
+  margin-bottom: 12px;
+}
+
+.slider-navigation .navi-btn {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+
+.slider-navigation .navi-btn.active {
+  background: #1c6758;
+}
+
+.slider-navigation .navi-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider-navigation .navi-btn:hover {
+  transform: scale(1.2);
+}
+
+.video-slide {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.video-slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s ease;
+  transition-property: clip-path;
+}
+
+.home .media-icons a:hover {
+  transform: scale(1.3);
+}
+
+@media (max-width: 1040px) {
+  section {
+    padding: 100px 20px;
+  }
+
+  .home .media-icons {
+    right: 15px;
+  }
+}
